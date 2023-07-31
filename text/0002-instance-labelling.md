@@ -7,7 +7,7 @@
 [target-audience]: #target-audience
 
 This proposal is subsequent to discussions made in the IFTAS chat channel `Moderation Tooling` and `Moderator Community Chat`.
-We'll be trying to encapsulate ideas similar, like a proposal mentioned by @zkat@toot.cat : https://toot.cat/@zkat/110810390507239555
+We'll be trying to encapsulate similar ideas, like a proposal mentioned by @zkat@toot.cat : https://toot.cat/@zkat/110810390507239555
 
 This proposal is intended to be discussed and reviewed by different actors, either making the Fediverse possible and/or attentive to its development :
 - Fediverse Server Developers
