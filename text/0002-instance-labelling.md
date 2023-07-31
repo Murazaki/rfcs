@@ -1,5 +1,5 @@
 - RFC Name: `Instance Labelling`
-- RFC PR: [iftas-org/rfcs#0002](https://github.com/iftas-org/rfcs/pull/0002)
+- RFC PR: [iftas-org/rfcs#0013](https://github.com/iftas-org/rfcs/pull/13)
 - Start Date: 2023-07-01
 
 # Target Audience
