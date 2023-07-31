@@ -6,8 +6,14 @@
 
 [target-audience]: #target-audience
 
-Use this section to list the different working groups within IFTAS that this proposal is related to, and which platforms you would desire review of this proposal from.
 This proposal is subsequent to discussions made in the IFTAS chat channel `Moderation Tooling` and `Moderator Community Chat`.
+We'll be trying to encapsulate ideas similar, like a proposal mentioned by @zkat@toot.cat : https://toot.cat/@zkat/110810390507239555
+
+This proposal is intended to be discussed and reviewed by different actors, either making the Fediverse possible and implicated in its development :
+- Fediverse Server Developers
+- Fediverse Server Moderators
+- Moderation Tooling WG
+- Blocklist WG
 
 # Summary
 
@@ -30,9 +36,12 @@ We also wish that presenting those labels as a way to facilitate federation with
 
 [guide-level-explanation]: #guide-level-explanation
 
-Explain the proposal as if it was already existing in the Fediverse, as if you were teaching it to another person familiar with the Fediverse. That generally means:
+In simpler terms
 
-- Introducing new named concepts.
+- Glossary
+  - Label : Proof of adhering to a community's manifesto
+  - Manifesto : set of rules that binds instances that accept the label
+
 - Explaining the feature largely in terms of examples.
 - Explaining how reviewers should _think_ about the feature.
 - Discuss how it should impact the the Fediverse, it should explain the impact as concretely as possible.
