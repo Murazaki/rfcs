@@ -9,7 +9,7 @@
 This proposal is subsequent to discussions made in the IFTAS chat channel `Moderation Tooling` and `Moderator Community Chat`.
 We'll be trying to encapsulate ideas similar, like a proposal mentioned by @zkat@toot.cat : https://toot.cat/@zkat/110810390507239555
 
-This proposal is intended to be discussed and reviewed by different actors, either making the Fediverse possible and implicated in its development :
+This proposal is intended to be discussed and reviewed by different actors, either making the Fediverse possible and/or attentive to its development :
 - Fediverse Server Developers
 - Fediverse Server Moderators
 - Moderation Tooling WG
@@ -42,11 +42,16 @@ In simpler terms
   - Label : Proof of adhering to a community's manifesto
   - Manifesto : set of rules that binds instances that accept the label
 
-- Explaining the feature largely in terms of examples.
-- Explaining how reviewers should _think_ about the feature.
-- Discuss how it should impact the the Fediverse, it should explain the impact as concretely as possible.
-- If applicable, provide sample use-cases, and how it would affect different interested parties (General Public, Moderators, Server Operators, Platforms).
-- If applicable, describe the differences between this proposal and existing solutions.
+Let's consider a community 1, their adhering instances (one being instance B) and a new instance A wanting to claim the label 1 offered by community 1.
+
+Instance A claims the label 1 :
+Community 1 will review the claim request and approve or disapprove the claim. It can also be offered in a testing period (the users could be notified of it through label display and the community's website interface).
+Instance B can review new instances that got the label (maybe through the community's website) and accept federation, either manually or automatically, of Instance A.
+As Instance A has claimed the label, they need to follow the rules attached. Community 1 reviews regularly proper following of said rules (this reviewing can be moderator-based reviews and/or user-based polls, depending on their capacity).
+If Instance A follows the rules of label 1 properly, reviews should be reflecting that and Instance A keeps the label.
+If Instance A does not follow the rules of label 1 properly, reviews tells that Instance A does not follow the rules, and Community 1 degrades Instance A as a non proper label abider.
+For keeping the possibility of Instance A to keep the label and fix their situation, it seems fitting to show the review as a grade.
+As Instance A gets a bad review, Instance B gets notified and can, manually or automatically, defederate Instance A. In certain situations, it could be of good courtesy to wait for Instance A to fix the situation, if they communicated they would and show proper improvements.
 
 # Reference-level explanation
 
@@ -65,7 +70,8 @@ The section should return to the examples given in the previous section, and exp
 
 [drawbacks]: #drawbacks
 
-Why should we _not_ do this?
+There is a possibility of bad actors using labels as their common rule, telling community friendly actors to accept their rules or be considered intolerant.
+For that, it might be a good idea to set up some basic common ground rules that keep bad behaviors out of the way.
 
 # Rationale and alternatives
 
@@ -106,19 +112,5 @@ Note that while precedent set by other social networks is some motivation, it do
 
 [future-possibilities]: #future-possibilities
 
-Think about what the natural extension and evolution of your proposal would
-be and how it would affect the Fediverse as a whole in a holistic
-way. Try to use this section as a tool to more fully consider all possible
-interactions with the Fediverse in your proposal.
-Also consider how this all fits into the roadmap for IFTAS and various platforms that would potentially need to implement this functionality to be compatible or in accordance with this RFC.
-
-This is also a good place to "dump ideas", if they are out of scope for the
-RFC you are writing but otherwise related.
-
-If you have tried and cannot think of any future possibilities,
-you may simply state that you cannot think of anything.
-
-Note that having something written down in the future-possibilities section
-is not a reason to accept the current or a future RFC; such notes should be
-in the section on motivation or rationale in this or subsequent RFCs.
-The section merely provides additional information.
+One extension to this proposal might be to give the possibility to communities to give out sets of rules and review labels through a proper tool.
+Another might be that communities could create moderation teams to help out instances in moderating content. Whether this would go through an external tool with moderation rights on instances concerned is up to reflexion for the next proposal.
