@@ -32,6 +32,8 @@ def main():
         preview()
     elif sys.argv[1] == 'clean':
         clean()
+    elif sys.argv[1] == 'install':
+        install()
     else:
         print('Unknown command, expected one of: generate, preview, clean')
         exit(1)
@@ -63,6 +65,16 @@ def clean():
             shutil.rmtree(f'src/{path}')
         else:
             os.remove(f'src/{path}')
+            
+def install():
+    try:
+        print("Installing cargos...")
+        subprocess.call(['cargo', 'install', 'mdbook', 'mdbook-mermaid'])
+        print("Installing mermaid files...")
+        subprocess.call(['mdbook-mermaid', 'install', '.'])
+        print("Installed successfully !")
+    except KeyboardInterrupt:
+        print("Could not install. Exiting...")
 
 def preview():
     generate()
@@ -71,7 +83,7 @@ def preview():
     try:
         subprocess.call(['mdbook', 'serve'])
     except KeyboardInterrupt:
-        print(" exiting...")
+        print("Exiting...")
 
 #
 # Helpers:

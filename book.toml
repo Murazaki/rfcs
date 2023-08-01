@@ -10,9 +10,15 @@ build-dir = "build"
 [output.html]
 no-section-label = true
 git-repository-url = "https://github.com/iftas-org/rfcs"
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
 [output.html.search]
 heading-split-level = 0
 
 [output.html.playground]
 runnable = false
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
